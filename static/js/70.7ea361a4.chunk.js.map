@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/Form/ResetButton/index.js"],"names":["applyVariable"],"mappings":"wNAIA,G,0DAAeA,YAAf","file":"static/js/70.7ea361a4.chunk.js","sourcesContent":["import React from 'react';\nimport { ResetButton } from '@kne/react-form-antd';\nimport { applyVariable } from '../../util';\n\nexport default applyVariable(ResetButton);"],"sourceRoot":""}

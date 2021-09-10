@@ -1,0 +1,259 @@
+{
+  "functions": {
+    "$getJSON": "return lib.axios.get('https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/examples/data/asset/data/les-miserables.json').then(({data})=>data);"
+  },
+  "data": [
+    {
+      "id": "Row-3",
+      "component": "Row",
+      "children": [
+        {
+          "id": "Col-4",
+          "component": "Col",
+          "props": {
+            "span": 12
+          },
+          "children": [
+            {
+              "id": "EChart-2",
+              "component": "EChartScatter",
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "height": "300px"
+                },
+                "options": {
+                  "xAxis": {
+                    "type": "category",
+                    "data": [
+                      "Mon",
+                      "Tue",
+                      "Wed",
+                      "Thu",
+                      "Fri",
+                      "Sat",
+                      "Sun"
+                    ]
+                  },
+                  "yAxis": {
+                    "type": "value"
+                  },
+                  "series": [
+                    {
+                      "data": [
+                        150,
+                        230,
+                        224,
+                        218,
+                        135,
+                        147,
+                        260
+                      ],
+                      "type": "scatter"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "Col-6",
+          "component": "Col",
+          "props": {
+            "span": 12
+          },
+          "children": [
+            {
+              "id": "EChart-7",
+              "component": "EChartBar",
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "height": "300px"
+                },
+                "options": {
+                  "xAxis": {
+                    "type": "category",
+                    "data": [
+                      "Mon",
+                      "Tue",
+                      "Wed",
+                      "Thu",
+                      "Fri",
+                      "Sat",
+                      "Sun"
+                    ]
+                  },
+                  "yAxis": {
+                    "type": "value"
+                  },
+                  "series": [
+                    {
+                      "data": [
+                        150,
+                        230,
+                        224,
+                        218,
+                        135,
+                        147,
+                        260
+                      ],
+                      "type": "bar"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Row-8",
+      "component": "Row",
+      "children": [
+        {
+          "id": "Col-9",
+          "component": "Col",
+          "props": {
+            "span": 12
+          },
+          "children": [
+            {
+              "id": "EChart-10",
+              "component": "EChartPie",
+              "props": {
+                "style": {
+                  "width": "100%",
+                  "height": "300px"
+                },
+                "options": {
+                  "tooltip": {
+                    "trigger": "item"
+                  },
+                  "legend": {
+                    "top": "5%",
+                    "left": "center"
+                  },
+                  "series": [
+                    {
+                      "name": "访问来源",
+                      "type": "pie",
+                      "radius": [
+                        "40%",
+                        "70%"
+                      ],
+                      "avoidLabelOverlap": false,
+                      "itemStyle": {
+                        "borderRadius": 10,
+                        "borderColor": "#fff",
+                        "borderWidth": 2
+                      },
+                      "label": {
+                        "show": false,
+                        "position": "center"
+                      },
+                      "emphasis": {
+                        "label": {
+                          "show": true,
+                          "fontSize": "40",
+                          "fontWeight": "bold"
+                        }
+                      },
+                      "labelLine": {
+                        "show": false
+                      },
+                      "data": [
+                        {
+                          "value": 1048,
+                          "name": "搜索引擎"
+                        },
+                        {
+                          "value": 735,
+                          "name": "直接访问"
+                        },
+                        {
+                          "value": 580,
+                          "name": "邮件营销"
+                        },
+                        {
+                          "value": 484,
+                          "name": "联盟广告"
+                        },
+                        {
+                          "value": 300,
+                          "name": "视频广告"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "Col-11",
+          "component": "Col",
+          "props": {
+            "span": 12
+          },
+          "children": [
+            {
+              "id": "Remote-13",
+              "component": "Remote",
+              "props": {
+                "resource": "$getJSON"
+              },
+              "children": [
+                {
+                  "id": "EChart-12",
+                  "component": "EChartGraph",
+                  "props": {
+                    "style": {
+                      "width": "100%",
+                      "height": "300px"
+                    },
+                    "options": {
+                      "title": {
+                        "text": "Les Miserables",
+                        "subtext": "Circular layout",
+                        "top": "bottom",
+                        "left": "right"
+                      },
+                      "animationDurationUpdate": 1500,
+                      "animationEasingUpdate": "quinticInOut",
+                      "series": [
+                        {
+                          "name": "Les Miserables",
+                          "type": "graph",
+                          "layout": "circular",
+                          "circular": {
+                            "rotateLabel": true
+                          },
+                          "data": "$item.nodes",
+                          "links": "$item.links",
+                          "categories": "$item.categories",
+                          "roam": true,
+                          "label": {
+                            "position": "right",
+                            "formatter": "{b}"
+                          },
+                          "lineStyle": {
+                            "color": "source",
+                            "curveness": 0.3
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

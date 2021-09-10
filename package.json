@@ -1,6 +1,6 @@
 {
   "name": "@kne/react-view-render-echarts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "@kne/react-view-render的echarts扩展",
   "homepage": "https://github.com/kne-union/react-view-render-echarts",
   "main": "dist/index.js",
@@ -70,6 +70,7 @@
   "dependencies": {
     "@loadable/component": "^5.15.0",
     "echarts": "^5.2.0",
-    "rc-resize-observer": "^1.0.1"
+    "rc-resize-observer": "^1.0.1",
+    "wordcloud": "^1.2.2"
   }
 }

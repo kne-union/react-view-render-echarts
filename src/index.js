@@ -1,5 +1,6 @@
 import loadable from '@loadable/component';
 import profile from './profile.json';
+import wordCloudProfile from './WordCloud/profile.json';
 
 export default [
     {
@@ -71,5 +72,9 @@ export default [
             id: "EChartTree",
             name: "树图"
         })
+    },
+    {
+        component: loadable(() => import('./WordCloud')),
+        profile: wordCloudProfile
     }
 ];

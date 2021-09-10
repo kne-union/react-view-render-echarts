@@ -1,2 +1,0 @@
-(this["webpackJsonpreact-view-render-example"]=this["webpackJsonpreact-view-render-example"]||[]).push([[63],{336:function(e,a,n){"use strict";n.r(a),n.d(a,"default",(function(){return b}));var t=n(30),r=n(0),c=n.n(r),i=n(647),s=(n(3),n(87),n(7),n(36),n(88),n(16),n(89),n(86),n(60),n(90),["tabPanes"]),u=["tabPanes","children"],b=Object(t.d)((function(e){var a=e.tabPanes,n=Object(t.c)(e,s);return c.a.createElement(i.a,n,a.map((function(e){var a=e.children,n=Object(t.c)(e,u);return c.a.createElement(i.a.TabPane,n,a)})))}))}}]);
-//# sourceMappingURL=63.ef68be9b.chunk.js.map

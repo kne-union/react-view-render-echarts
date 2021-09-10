@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/General/Modal/index.js"],"names":["applyVariable"],"mappings":"kNAGA,G,+DAAeA,YAAf","file":"static/js/71.e45dcc9c.chunk.js","sourcesContent":["import {Modal} from 'antd';\nimport {applyVariable} from '../../util';\n\nexport default applyVariable(Modal);"],"sourceRoot":""}

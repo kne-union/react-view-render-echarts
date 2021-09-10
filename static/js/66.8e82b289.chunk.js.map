@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/Form/FormModal/index.js"],"names":["applyVariable"],"mappings":"wNAIA,G,0DAAeA,YAAf","file":"static/js/66.8e82b289.chunk.js","sourcesContent":["import React from 'react';\nimport {FormModal} from '@kne/react-form-antd';\nimport {applyVariable} from '../../util';\n\nexport default applyVariable(FormModal);"],"sourceRoot":""}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/General/Empty/index.js"],"names":["applyVariable"],"mappings":"kNAGA,G,+DAAeA,YAAf","file":"static/js/65.65893ef6.chunk.js","sourcesContent":["import {Empty} from 'antd';\nimport {applyVariable} from '../../util';\n\nexport default applyVariable(Empty);"],"sourceRoot":""}
